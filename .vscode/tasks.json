@@ -11,7 +11,8 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                //"${fileDirname}\\exe\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}\\obj\\${fileBasenameNoExtension}.exe",
                 "-ggdb3",   // 生成和调试有关的信息
                 "-Wall",    // 开启额外警告
                 "-static-libgcc",   // 静态链接

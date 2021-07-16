@@ -36,7 +36,7 @@ void quickSort(vector<int>& arr, int left, int right) {
     arr[i] = base;
 
     //递归左右子区间
-    quickSort(arr, left, i - 1);//因为i处的已经时基准数，不需要再进行排序
+    quickSort(arr, left, i - 1);//因为i处的已经是基准数，不需要再进行排序
     quickSort(arr, i + 1, right);
 }
 
